@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@chainlink/functions-toolkit": "^0.3.2",
+    "@ltd/j-toml": "^1.38.0",
+    "solc": "^0.8.28"
+  },
+  "scripts": {
+    "simulate": " .env && node ./functions/simulators/alpacaMintSimulator.js",
+    "mint": "source .env && node ./functions/simulators/alpacaMintSimulator.js",
+    "redeem": "source .env && node ./functions/simulators/alpacaRedeemSimulator.js",
+    "uploadSecrets": "source .env && node ./functions/uploadSecrets.js"
+  }
+}
